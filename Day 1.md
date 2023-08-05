@@ -1,4 +1,4 @@
-#  Day 1 🚀
+#  challenges 🔥🚀
 <br>
 
 ##  Before I got access to FrontendMasters courses, I started my journey 💻📚🔍
