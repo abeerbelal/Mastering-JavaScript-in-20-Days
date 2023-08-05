@@ -6,11 +6,11 @@ As each day progresses, observe how your knowledge of JavaScript soars to new he
 
 Take on this task to improve your command of JavaScript. You will explore various elements of JavaScript every day, building a solid foundation and gaining practical experience through projects and exercises. 📚👩‍💻
  
-# Overview
+# Overview 🌐
 - Duration: 20 days
 - Objective: Learn the fundamentals of JavaScript and explore more complex ideas by practicing and learning new things every day.
 
-# Courses
+# Courses🚀
 - [JavaScript: From First Steps to Professional](https://frontendmasters.com/courses/javascript-first-steps/)
 - [JavaScript: The Hard Parts, v2](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
 - [Deep JavaScript Foundations, v3](https://frontendmasters.com/courses/deep-javascript-v3/)
