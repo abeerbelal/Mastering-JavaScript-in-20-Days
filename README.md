@@ -16,7 +16,7 @@ Take on this task to improve your command of JavaScript. You will explore variou
 - [Deep JavaScript Foundations, v3](https://frontendmasters.com/courses/deep-javascript-v3/)
 
 # Coding Challenges
-- [Coding Challenges]()
+- [Basic JavaScript 1st challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)- 3 challenges
 
 # Daily Learning Process 🏋️‍♂️💪
 1. Each day, I'll watch at least 180 minutes of the assigned courses listed above.
