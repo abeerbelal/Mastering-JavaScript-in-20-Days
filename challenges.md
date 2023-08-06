@@ -42,3 +42,30 @@ const secondToLastLetterOfLastName = lastName[lastName.length - 2];
 console.log(secondToLastLetterOfLastName);
 
 ```
+
+<br>
+
+4. [qustions about what is the output and why](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week1%20-%20javascript-from-first-steps-to-professional/day%202/tasks.md)
+
+  My Solution💻 1:
+  ```
+let a = 0;
+let b = "0";
+let c = false;
+let d = "false";
+
+console.log(a == b); // the output => true, because  
+console.log(b === c);// the output => false, because 
+console.log(!!d);// the output => true, because 
+```
+
+  My Solution💻 2:
+  ```
+  console.log(4 + 5 * "7"); the output =>39
+
+```
+ 
+
+
+
+
