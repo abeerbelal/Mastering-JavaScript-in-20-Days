@@ -1,3 +1,4 @@
+
 # Gaza Sky Geeks Learning Sprint - 20-Day Learning JavaScript Challenge 🚀🔥
 ## Welcome to my 20-Day Learning JavaScript Challenge! 💻🔥
 
@@ -35,3 +36,4 @@ Take on this task to improve your command of JavaScript. You will explore variou
 # Folder Structure 🔥
 - [challenges🔥💻](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/challenges.md)🚀
 - [Day 1](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%201.md)💎
+- [Day 2💎](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%202.md)💎
