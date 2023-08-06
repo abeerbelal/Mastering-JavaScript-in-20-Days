@@ -75,7 +75,6 @@ index => a number given to a position
 
 ### Exercises in course: 🔥
 ```
-// Exercises
 // 1. Add your last name in the players listing
 document.getElementById("p1-name").append(" hanaysheh")
 
@@ -90,6 +89,9 @@ document.querySelector("header h1").textContent =  // to appear in the page
 document.querySelector("h1").textContent.toUpperCase()
 ```
  <br>
+
+ ## Operators ➗
+ 
 
 
 
