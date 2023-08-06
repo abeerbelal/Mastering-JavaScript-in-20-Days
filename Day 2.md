@@ -73,6 +73,24 @@ index => a number given to a position
 "aloha".toUpperCase() //"ALOHA"
 ```
 
+### Exercises in course: 🔥
+```
+// Exercises
+// 1. Add your last name in the players listing
+document.getElementById("p1-name").append(" hanaysheh")
+
+// 2. Retrieve the first "T" in the page title
+document.title.indexOf("T")
+
+// 3. Answer whether the page title contains the string "JavaScript"
+document.title.includes("JavaScript")
+
+// 4. Capitalize the heading "Tic Tac Toe"
+document.querySelector("header h1").textContent =  // to appear in the page
+document.querySelector("h1").textContent.toUpperCase()
+```
+ <br>
+
 
 
 
