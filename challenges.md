@@ -64,6 +64,27 @@ console.log(!!d);// the output => true, because
   console.log(4 + 5 * "7"); the output =>39
 
 ```
+
+  My Solution💻 3:
+  ```
+let result = 5 + 2 * 3 - 1;
+```
+
+  My Solution💻 4:
+  ```
+let x = 10;
+let y = '10';
+console.log(x == y);
+console.log(x === y);
+```
+
+ My Solution💻 5:
+ ```
+let num = "15";
+let isPositive = true;
+let result = (num > 10 && isPositive) || num < 0;
+console.log(result);
+```
  
 
 
