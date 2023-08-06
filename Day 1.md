@@ -1,7 +1,7 @@
 # first day 💎🔥
  <br>
   
-## Intoduction 💻 📑
+## Intoduction 💻 📋 📓
 
 js is a programming language, lang of web, it helps websites to do things, modify and interact with HTML. It makes browser live.
 - Created in 1995(Brendan Eich)
@@ -17,5 +17,35 @@ We write JavaScript in:
 <br>
 
 ## DOM (Document Object Model) ✨
+It's the tree of HTML document, structure of the page.
+
+- document: represent the entire HTML document
+- document.title: represent the page (document) title
+- document.body: represent the body element
+
+### Finding elements in web page:
+here's a summary of some  different ways to find elements in the (DOM) using JavaScript
+- `document.body.children`: all the elements within the body
+- getElementById(): Finds an element by its unique ID attribute
+  `
+  document.getElementById("board");
+  `
+- querySelector(): Selects the first element that matches a CSS selector
+  `
+  document.querySelector("#board")
+  `
+- querySelectorAll(): Returns a NodeList containing all elements that match a CSS selector
+   `
+  document.querySelectorAll("h1")
+  `
+
+
+
+
+### Editing the DOM with js:
+these changes not persistent, because if i reload the page it's going to be different.
+
+
+
 
 
