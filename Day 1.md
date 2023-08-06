@@ -38,12 +38,22 @@ here's a summary of some  different ways to find elements in the (DOM) using Jav
    `
   document.querySelectorAll("h1")
   `
-
+- getElementsByClassName(): Retrieves a collection of elements with the specified class name.
+`
+document.getElementsByClassName("player")
+`
+- `document.getElementsByClassName("player").length` the number of elements with class="player".
+- ` document.getElementById("p1-name").textContent ` the text inside the element with id="p1-name".
 
 
 
 ### Editing the DOM with js:
 these changes not persistent, because if i reload the page it's going to be different.
+
+- ` document.title = "My Page"` change the page title, note the double-quotes.
+- ` document.getElementById("p1-name").textContent = "Sofia" ` replace the text of the #p1-name element
+- ` document.getElementById("p1-name").append(" & friends") ` add to the end of the element's current text.
+  
 
 
 
