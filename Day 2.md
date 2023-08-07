@@ -92,10 +92,71 @@ document.querySelector("h1").textContent.toUpperCase()
 
 
  ## Operators ➗🤔 
- 
+
+### Arithmetic operators
+-  '+' add
+-  '-' subtract
+-  '*' multiply
+-  '/' divide
+
+  
+ ### ➕ operator:
+   is an operator with several different uses:
+  - when operating on strings => it concatenates the strings ` "abeer" + "belal" `.
+  - it can operate on Numbers by adding them `1+1`.
+  - it called an overloaded operator because it does different functions.
 
  
  
+### typeof:
+The typeof operator returns a string indicating the type of the operand's value.
+```
+console.log(typeof 42);
+// Expected output: "number"
+
+console.log(typeof 'blubber');
+// Expected output: "string"
+```
+
+### Comparison operators  ⚡️
+- '>' greater than
+- '<' less than
+- '>=' greater than or equal to
+- '<=' less than or equal to
+
+### Equality operators:
+| strict     | loosey-    | meaning            |
+|------------|------------|--------------------|
+| ===        | ==         | equals             |
+| !==        | !=         | does not equal     |
+
+ ### ⏳✨⚡️
+| strict        | loosey-goosey | meaning           | Do these differ? How?🤔            |
+|---------------|---------------|-------------------|-----------------------------------|
+| 1 === 1       | 1 == 1        | equals            | No difference. Both are true.     |
+| "1" === "1"   | "1" == "1"    | equals            | No difference. Both are true.     |
+| 1 === "1"     | 1 == "1"      | does not equal    | Yes, difference. Strict comparison checks both value and type, so 1 (number) is not equal to "1" (string). Loose comparison only checks the value, so it considers them equal. |
+
+
+### Nullish coalescing operator (??):🚩
+The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is `null` or `undefined`, and otherwise returns its left-hand side operand.
+
+## Expressions ☄️
+an expression evaluates (aka resolves) to a value, more like content.
+```
+4 / 2 * 10
+"Frontend" + "Masters"
+5 > 4 !== 3 > 4
+```
+
+
+
+
+
+
+
+
+
 
 
 
