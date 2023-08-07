@@ -13,7 +13,14 @@ js is a programming language, lang of web, it helps websites to do things, modif
 We write JavaScript in:
 1. The browser's js  console
 2. local text editor e.g Vs code
-3. online playground e.g codepen 
+3. online playground e.g codepen
+
+### HTML& CSS& JS
+Html is the noun.
+
+CSS is the adjective, the description of the thing.
+
+JS is the verb, the action.
 <br>
 
 ## DOM (Document Object Model) ✨
