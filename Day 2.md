@@ -2,7 +2,7 @@
 <br>
 
 
-## Values & datatypes 🔑
+## Values & datatypes 🗝️
 <br>
 
 ### Values 👇
@@ -155,17 +155,17 @@ an expression evaluates (aka resolves) to a value, more like content.
  - as pointer points to specific value.
 
   ### Declaring a variable
-  - via var keyword ` var name;` 
-  - via let keyword ` let name;`
-  - via const keyword ` const name;` => const declares & assigns a "constant", aka a variable that can't be changed 🙄 .
+  - via var keyword ` var name;` 🔓
+  - via let keyword ` let name;`🔐
+  - via const keyword ` const name;` => const declares & assigns a "constant", aka a variable that can't be changed 🙄 🔒.
 
     ### Variable names
    -  camelCase 👉❓ 'variables contain values? e.g: `let FirstName;`
    -  lso_valid_but_less_common
    -  ddbut_Technicallyfine2
 
-### Assigning a variable:
-== operator here means assign value to variable 
+### Assigning a variable🔒:
+" = "  operator here means assign value to variable 
 ```
 let myDeclaredVariable;
 myDeclaredVariable = "so value, much wow";
@@ -177,7 +177,40 @@ let variable; //this will take undefined "nothing"
 ```
     
 
-    
+ 
+ ## **Statements vs. Expressions** 👩🏻‍💻🤔
+ ### An expression "asks" JS for a value
+
+
+```
+myAssignedVariable  // what is the value of my variable
+6 + 4               // what is the value of this summation
+document.getElementById("board")
+```
+
+A **statement**  "tells" JS to do something, actions we want JS to do it
+
+```
+// e.g: declare/assign a variable
+let ten = 6 + 4;
+myDeclaredVariable = "new value";
+let board = document.getElementById("board");
+
+function add(x, y) {
+    return x + y;
+}
+
+let biggest;
+if (5 > 4) {
+    biggest = 5;
+} else {
+    biggest = 4;
+}
+for (let character of "string") {
+    console.log(character);
+}
+```
+ 
 
 
 
