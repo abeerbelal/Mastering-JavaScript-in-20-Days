@@ -149,6 +149,36 @@ an expression evaluates (aka resolves) to a value, more like content.
 5 > 4 !== 3 > 4
 ```
 
+ ## Variables: 🎯🚀
+ A variable is a named reference to a valu—thatt way an unpredictable value can be accessed through a predetermined name.
+ - Variables let us remember values.
+ - as pointer points to specific value.
+
+  ### Declaring a variable
+  - via var keyword ` var name;` 
+  - via let keyword ` let name;`
+  - via const keyword ` const name;` => const declares & assigns a "constant", aka a variable that can't be changed 🙄 .
+
+    ### Variable names
+   -  camelCase 👉❓ 'variables contain values? e.g: `let FirstName;`
+   -  lso_valid_but_less_common
+   -  ddbut_Technicallyfine2
+
+### Assigning a variable:
+== operator here means assign value to variable 
+```
+let myDeclaredVariable;
+myDeclaredVariable = "so value, much wow";
+
+let myAssignedVariable = "such efficient, amaze"; //Declaring & assigning at once
+
+let x = null;// i want this variable to be empty
+let variable; //this will take undefined "nothing"
+```
+    
+
+    
+
 
 
 
