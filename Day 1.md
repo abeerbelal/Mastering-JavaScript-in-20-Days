@@ -26,6 +26,19 @@ JS is the verb, the action.
 ## DOM (Document Object Model) ✨
 It's the tree of HTML document, structure of the page.
 
+ ### A simple document
+ ```
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>...</head>
+    <body>
+        <header>...</header>
+        <div id="board">...</div> 
+    </body>
+</html>
+
+```
+
 - document: represent the entire HTML document
 - document.title: represent the page (document) title
 - document.body: represent the body element
