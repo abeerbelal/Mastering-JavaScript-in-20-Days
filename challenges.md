@@ -137,5 +137,28 @@ console.log(result); //true
 
 ```
 
+10. [Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions).
 
+      My Solution💻:
+```
+
+```
+11. [Local Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions).
+
+      My Solution💻:
+```
+
+```
+12. [Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions).
+
+      My Solution💻:
+```
+
+```
+13. [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
+
+      My Solution💻:
+```
+
+```
 
