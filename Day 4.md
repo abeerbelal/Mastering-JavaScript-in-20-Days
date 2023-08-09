@@ -18,7 +18,7 @@ function add(x, y) {
 }
 add(2,3);
 ```
-### Some functions don't even need any values :
+### Some functions don't even need any values :📌
 called void functions
 ```
 function getRandomNumber() {
@@ -37,4 +37,17 @@ function add3(x, y, z) {
     return x + y + z;
 }
 const sum = add3(4,5,6);
+```
+### Arrow functions:➡️
+The => "fat arrow" lets us create an unnamed function without much code aka an arrow function `(x, y) => x + y`
+
+### setAttribute() & removeAttribute() methods 📋✏️📌
+`setAttribute :` Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+
+```
+setAttribute(name, value)
+```
+ `removeAttribute:` removes the attribute with the specified name from the element.
+ ```
+removeAttribute(attrName)
 ```
