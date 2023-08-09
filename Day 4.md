@@ -118,11 +118,11 @@ event.target is the element the event fired on
 });`
 
 > "click" isn't the only type of event we can handle
-> "dblclick"
+> - "dblclick"
 
-> "mouseover"
+> - "mouseover"
 
-> "mouseout"
+> - "mouseout"
 
 > ...and lots more! you can check [MDN-EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
