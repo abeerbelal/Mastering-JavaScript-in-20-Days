@@ -26,4 +26,15 @@ function getRandomNumber() {
 }
 getRandomNumber();
 ```
-
+- parameters are the inputs a function expects,
+- arguments are the actual values the function is called with,
+- Parameters should be named like variables, and behave like variables within the function body
+- JS is pretty "loosey-goosey" about missing/extra arguments`getRandomNumber("unexpected")`it will give result
+```
+function add3(x, y, z) {
+    console.log("My parameters are named x, y, z");
+    console.log("I received the arguments", x, y, z);
+    return x + y + z;
+}
+const sum = add3(4,5,6);
+```
