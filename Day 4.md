@@ -91,6 +91,36 @@ console.log(feeling); //boxedIn
  ```
 
 ## Events & Handlers:
-The web browser fires events when certain things happen on the page
-
+- The web browser fires events when certain things happen on the page
 For example, when the user clicks somewhere on the page, a click event is fired
+- We can detect events with JS using an event listener
+The `.addEventListener()` method lets us listen for events on a DOM element
+
+```
+ .addEventListener() takes 2 parameters:
+- The name of the event to listen to (e.g. "click")
+- A handler function that JS calls when that event is fired on this element
+
+document.addEventListener("click", () => {
+    console.log("clicked")
+});
+```
+JS passes an event object to the handler function with information about the event
+If we accept this as a parameter, we can use it to get details
+```
+document.addEventListener("click", (event) => {
+    console.log(event);
+});
+```
+event.target is the element the event fired on
+(in this case, which element was clicked)`document.addEventListener("click", (event) => {
+    console.log(event.target);
+});`
+
+> "click" isn't the only type of event we can handle
+> "dblclick"
+> "mouseover"
+> "mouseout"
+> ...and lots more! you can check [MDN-EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+
