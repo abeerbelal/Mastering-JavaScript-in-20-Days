@@ -45,9 +45,52 @@ The => "fat arrow" lets us create an unnamed function without much code aka an a
 `setAttribute :` Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 
 ```
+
+
 setAttribute(name, value)
 ```
  `removeAttribute:` removes the attribute with the specified name from the element.
  ```
 removeAttribute(attrName)
 ```
+
+### Scope:
+In JS it doesn't just matter what variables we declare, It also matters where we declare them, Scope determines where variables are "in play".
+
+```
+function declareBankruptcy() {
+    let bankruptcy = true;
+}
+declareBankruptcy();
+console.log(bankruptcy);
+```
+
+- Scopes are nested within the program
+- The widest scope is the global scope
+- Each function gets its own new scope within the scope where it was declared
+- Within each scope, you can access variables declared in a wider scope (e.g. global scope)
+   But not those declared in a narrower scope (e.g. function scope)
+```
+let globalVariable = "I live in global scope"; 
+function narrowerScope() {
+    console.log(globalVariable);
+    let localVariable = "I live in the function scope";
+}
+narrowerScope();
+console.log(localVariable);
+```
+> Variables declared with let can be modified from within a narrower scope
+> This can be useful, but also dangerous!
+ ```
+ let feeling = "free";
+function trap() {
+    feeling = "boxedIn";
+}
+trap();
+console.log(feeling); //boxedIn
+ ```
+
+## Events & Handlers:
+The web browser fires events when certain things happen on the page
+
+For example, when the user clicks somewhere on the page, a click event is fired
