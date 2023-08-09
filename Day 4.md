@@ -112,18 +112,32 @@ document.addEventListener("click", (event) => {
     console.log(event);
 });
 ```
-event.target is the element the event fired on
-(in this case, which element was clicked)`document.addEventListener("click", (event) => {
+
+### event.target: ✨⚡️
+Is the element the event fired on (in this case, which element was clicked)
+```javaScript
+document.addEventListener("click", (event) => {
     console.log(event.target);
-});`
+});
+```
+<br>
 
-> "click" isn't the only type of event we can handle
-> - "dblclick"
+### Some events: 💻🔥
+1. **["click"](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)**
+2. **["dblclick"](https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event)** 
+3. [**"mouseover"**](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event)
+4. [**"mouseout"**](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event)
 
-> - "mouseover"
 
-> - "mouseout"
+```
+let b = document.getElementsByName("true")[0]
+b.addEventListener("mouseover", () => {
+    console.log("The carser is in the button")
+});
 
-> ...and lots more! you can check [MDN-EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+b.addEventListener("mouseout", () => {
+    console.log("The carser is out the button")
+});
+```
 
 
