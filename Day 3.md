@@ -1,7 +1,6 @@
 # Third Day ✏️
 <br>
 
-
 ## Arrays 🔥💫:
 Arrays let us keep multiple values together in a single collection
 ` let synonyms = ["plethora", "array", "cornucopia"] `
