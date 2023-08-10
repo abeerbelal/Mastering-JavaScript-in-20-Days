@@ -84,3 +84,55 @@ const spices = [
 const nicknames = spices.map(s => s.nickname + " Spice"); //Arrow functions are useful for this!
 ```
 
+> note:📌
+> String templates are useful too! Make them with backticks and ${}, e.g.
+> s => `${s.nickname} Spice`; is equivalent to s => s.nickname + " Spice"
+
+
+### filter 
+calls a true/false function on each item, and creates a new array with only the items where the function returns true
+```
+const mels = spices.filter(s => s.name.includes("Mel"));
+```
+
+Examp;e 🔍:
+```
+/* From the spices array, use map and filter to:
+
+create a new array names with only the name of each girl
+create a new array endInY with just the girls whose nickname ends in "y" */
+
+const spices = [
+    {name: "Emma", nickname: "Baby"},
+    {name: "Geri", nickname: "Ginger"},
+    {name: "Mel B", nickname: "Scary"},
+    {name: "Mel C", nickname: "Sporty"},
+    {name: "Victoria", nickname: "Posh"}
+];
+
+const names = spices.map(s=>s.name)
+const endInY = spices.filter(s=>s.nickname.endsWith("y"))
+```
+
+## Spread (...): 💎
+Is another neat trick for iterating over arrays,
+It lets us take all the items in an array and spread 'em around
+
+
+### Spread (...): 💎🔮
+It lets us take all the items in an array and spread 'em around
+```
+const oldBurns = ["square", "wack"];
+const newBurns = ["basic", "dusty", "sus"];
+
+const burnBook = [...oldBurns, ...newBurns];
+// equivalent to
+const burnBook = oldBurns.concat(newBurns);
+```
+We can also use it to pass all the items from an array as arguments to a function or method
+```
+const skills = ["HTML", "CSS", "JS"];
+const newSkills = ["React", "TypeScript", "Node"]
+skills.push(...newSkills);
+console.log(...skills);
+```
