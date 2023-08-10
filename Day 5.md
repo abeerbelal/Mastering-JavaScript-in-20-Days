@@ -352,3 +352,24 @@ while (fiveRandomNumbers.length < 5) {
 ```
 
 
+## (A)synchronous code✨🎀
+
+JS can usually run straight through our program "synchronously"(line after line)
+
+Some things that take time:💡
+
+- Waiting for user events
+- Asking a user to pick a file
+- Getting permission to access the camera/mic
+- Loading data from the interwebs
+
+So when we give JS a task that takes a while, it doesn't stop and wait
+```javaScript
+console.log("This will print first");
+setTimeout(() => console.log("This will print third"), 1000);
+console.log("This will print second");
+```
+
+it adds the slow task to a "TODO list" and keeps on running our program
+
+The task runs some time later, "asynchronously"
