@@ -83,3 +83,4 @@ const spices = [
 ];
 const nicknames = spices.map(s => s.nickname + " Spice"); //Arrow functions are useful for this!
 ```
+
