@@ -136,6 +136,18 @@ const newSkills = ["React", "TypeScript", "Node"]
 skills.push(...newSkills);
 console.log(...skills);
 ```
+## Loops ...continued
+while loops
+let us run a chunk of code over & over if a (condition) is true
+```
+let fiveRandomNumbers = [];
+while (fiveRandomNumbers.length < 5) {
+    fiveRandomNumbers.push(Math.random());
+}
+```
+> Warrning ⚠️⚠️⚠️⚠️⚠️
+> Don't use while (true) unless you want to see your computer burn!
+
 ## Doggo Fetch ✨✨✨
 ```
 <!DOCTYPE html>
