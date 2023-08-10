@@ -7,7 +7,7 @@ Arrays let us keep multiple values together in a single collection
 ` let synonyms = ["plethora", "array", "cornucopia"] `
 
 - Arrays can be empty, or hold a single item
-  ```
+  ```javaScript
   let emptyArray = [];
   let oneItemArray = ["lonely"];
   ```
@@ -22,14 +22,14 @@ synonyms.indexOf("cornucopia")`
 synonyms.includes("variety")`
 
 - Unlike strings, we can modify arrays
-```
+```javaScript
 synonyms[1] = "variety";
 let lastItem = synonyms.pop();
 synonyms.push("multitude");
 ```
 - Arrays can hold any type of items, or mix and match! `let mixedArray = ["pop", 6, "squish", false, document];`
 - Arrays can do lots of useful tricks!
-  ```
+  ```javaScript
   "Abeer" == ["Abeer"]      // ✅
   "Abeer" === ["Abeer"]     // ❌
   "Sarah" === ["Abeer"][0]  // ✅
@@ -46,7 +46,7 @@ synonyms.push("multitude");
  ###  Array.prototype.join()
  The join() method creates and returns a new string by concatenating all of the elements in this array, separated by commas or a 
  specified separator string. If the array has only one item, then that item will be returned without using the separator.
- ```
+ ```javaScript
 const elements = ['Fire', 'Air', 'Water'];
 
 console.log(elements.join());
@@ -61,7 +61,7 @@ console.log(elements.join('-'));
 
   ## Mutating data:
   In JS certian values behave differently than certian other values that we might think are similar
- ```
+ ```javaScript
 let abcArray = ["a", "b", "c"];
 abcArray[1] = "d";
 abcArray;  // ['a', 'd', 'c']
@@ -77,7 +77,7 @@ abcString; // 'abc'
 *"Immutable"* data always stays the same (e.g. strings & other primitives)
 
 Do these do the same thing?❓
-```
+```javaScript
 let numbers1 = [1, 2, 3];
 let result1 = numbers1.push(4); 
 numbers1;  // [1, 2, 3, 4]
@@ -98,7 +98,7 @@ numbers2; // [1, 2, 3]
 
 ### Variables themselves can also be (im)mutable 🌟 
 
-```
+```javaScript
 let letVariable = "original value";
 letVariable = "new value";
 
@@ -109,7 +109,7 @@ constVariable = "new Value";
 
 ### Immutable variable with mutable value 💡
 What happens when we use const with a mutable value like an array?
-```
+```javaScript
 const operands = [4, 6];
 const sum = operands[0] + operands[1]; //  10
 
@@ -128,7 +128,7 @@ const newSum = operands[0] + operands[1]; // 11
 
 ### Copying an array: ✏️
 
-```
+```javaScript
 let array1 = [1,2,3,4]
 let array2= array1
 array1[0]=5
@@ -149,7 +149,7 @@ array2 // [5,2,3,4]
 - We can access edit and add any property using "."
 - everything in javascript not a primitive type it is an object e.g array is a special kind of object
 
-```
+```javaScript
 const js = {
     name: "JavaScript",
     abbreviation: "JS",
@@ -167,7 +167,7 @@ Edit  property `js.learn = true`
 Using property values `js.name.startsWith("Java")  ,  let age = 2022 - js.birthYear;`
 
 Setting property values
-```
+```javaScript
 const indecisive = {
     lunch: "sandwich"
 };
@@ -179,7 +179,7 @@ indecisive.snack = "chips";
 trick in JS, to essentially freeze an object in place and make it **immutable**,
 and never be able to change from how it was when it was declared.
 
-```
+```javaScript
 const obj = {
   prop: 42,
 };
@@ -195,7 +195,7 @@ console.log(obj.prop);
 
 ### Methods🌌✨:
 Properties can point to functions too. We call function-properties "methods" on objectsCopy
-```
+```javaScript
 const dog = {
     name: "Ein",
     breed: "Corgi",
@@ -212,7 +212,7 @@ dog.speak();
 > execution, and it may be different each time the function is called. The bind() method can set the value of a function's this 
 > regardless of how it's called, and arrow functions don't provide their own this binding (it retains the this value of the enclosing 
 > lexical context).
-```
+```javaScript
 const test = {
   prop: 42,
   func: function () {
@@ -235,7 +235,7 @@ console.log(test.func());
    <br>
 
    # Quiz solution:
- ```
+ ```html
    <!DOCTYPE html>
 
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
