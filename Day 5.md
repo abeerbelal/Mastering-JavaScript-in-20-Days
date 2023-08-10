@@ -4,7 +4,7 @@
 
 If statment: ❓🌟
 If it's given some other value, JS will convert it to a boolean and decide based on its "truthiness”
-```
+```javaScript
 const you = {wannaBeMyLover: true};
 if (you.wannaBeMyLover) {
     you.gottaGetWithMyFriends = true;
@@ -13,7 +13,7 @@ if (you.wannaBeMyLover) {
 code in the if block only runs if the (condition) is true
 
 - we can use else to run other code if (condition) is false
-```
+```javaScript
 if (you.reallyBugMe) {
     console.log("Goodbye");
 } else {
@@ -21,7 +21,7 @@ if (you.reallyBugMe) {
 }
 ```
 - We can chain else and if blocks to account for multiple conditions
-  ```
+  ```javaScript
   function compare(x, y) {
     if (x > y) {
         console.log(x, "is greater than", y);
@@ -33,7 +33,7 @@ if (you.reallyBugMe) {
 
 
 ### The (condition) is usually an expression that evaluates to a boolean
-```
+```javaScript
 if (forecast === "rain") {
     console.log("bring an umbrella");
 }
@@ -49,20 +49,20 @@ if (forecast === "rain") {
 ## Loops 💫
 
 Loops let us run the same chunk of code multiple times => this is called iteration
-```
+```javaScript
 for (let rep = 0; rep < 10; rep += 1) {
     console.log("now doing rep", rep);
 }
 console.log("do you even lift bro");
 ```
 We can use for...of to iterate over characters in a string 
-```
+```javaScript
 for (let char of "ALOHA") {
     console.log(char);
 }
 ```
 OR items in an array ,because strings & arrays are "iterables"
-```
+```javaScript
 for (let item of ["pop", 6, "squish"]) {
     console.log(typeof item);
 }
@@ -73,7 +73,7 @@ The map & filter methods also let us process all the items in an array
 
 ### map : 🗺️
 Calls a function on each item in an array to create a new array
-```
+```javaScript
 const spices = [
     {name: "Emma", nickname: "Baby"},
     {name: "Geri", nickname: "Ginger"},
@@ -96,7 +96,7 @@ const mels = spices.filter(s => s.name.includes("Mel"));
 ```
 
 Examp;e 🔍:
-```
+```javaScript
 /* From the spices array, use map and filter to:
 
 create a new array names with only the name of each girl
@@ -121,7 +121,7 @@ It lets us take all the items in an array and spread 'em around
 
 ### Spread (...): 💎🔮
 It lets us take all the items in an array and spread 'em around
-```
+```javaScript
 const oldBurns = ["square", "wack"];
 const newBurns = ["basic", "dusty", "sus"];
 
@@ -139,7 +139,7 @@ console.log(...skills);
 ## Loops ...continued
 while loops
 let us run a chunk of code over & over if a (condition) is true
-```
+```javaScript
 let fiveRandomNumbers = [];
 while (fiveRandomNumbers.length < 5) {
     fiveRandomNumbers.push(Math.random());
@@ -149,7 +149,7 @@ while (fiveRandomNumbers.length < 5) {
 > Don't use while (true) unless you want to see your computer burn!
 
 ## Doggo Fetch ✨✨✨
-```
+```html
 <!DOCTYPE html>
 <!-- saved from url=(0068)https://anjana.dev/javascript-first-steps/3-doggofetch-finished.html -->
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
