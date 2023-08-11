@@ -38,6 +38,6 @@ Take on this task to improve your command of JavaScript. You will explore variou
 - [Day 1](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%201.md)💎
 - [Day 2](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%202.md)💎
 - [Day 3](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%203.md)💎
-- [Day 4](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%203.md)💎
-- [Day 5](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%203.md)💎
+- [Day 4](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%204.md)💎
+- [Day 5](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%205.md)💎
 - [Day 6](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%206.md)💎
