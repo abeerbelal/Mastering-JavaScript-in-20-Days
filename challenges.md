@@ -104,7 +104,11 @@ console.log(result); //true
 5. [Copy Array Items Using slice()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
 
       My Solution💻:
-```
+```javaScript
+function forecast(arr) {
+  return arr.slice(2,4);
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
 ```
 6. [Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
@@ -118,14 +122,33 @@ console.log(result); //true
 
 
       My Solution💻:
-```
+```javaScript
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ["learning",...fragment, "is", "fun"]
+  return sentence;
+}
+
+console.log(spreadOut());
 
 ```
 8. [Understanding Undefined Value returned from a Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
 
 
       My Solution💻:
-```
+```javaScript
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+function addFive() {
+  sum = sum + 5;
+}
+
+addThree();
+addFive();
 
 ```
 
@@ -133,44 +156,112 @@ console.log(result); //true
 
 
       My Solution💻:
-```
+```javaScript
+function timesFive(num) {
+  return num *5;
+}
+
+const answer = timesFive(5);
+console.log(answer)
+
 
 ```
 
 10. [Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions).
 
       My Solution💻:
-```
+```javaScript
+let myGlobal = 10;
+
+function fun1() {
+ oopsGlobal = 5;
+
+}
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
 
 ```
 11. [Local Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions).
 
       My Solution💻:
-```
+```javaScript
+function myLocalScope() {
+ let myVar = "foo";
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 
 ```
 12. [Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions).
 
       My Solution💻:
-```
+```javaScript
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+const outerWear = "sweater";
+  return outerWear;
+}
+
+console.log(myOutfit());//sweater
+console.log(outerWear);//T-Shirt
 
 ```
 13. [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
 
       My Solution💻:
-```
+```javaScript
+function nextInLine(arr, item) {
+  arr.push(item);
+  
+  return arr.shift();
+  
+}
+
+let testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 
 ```
 14. [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
 
       My Solution💻:
-```
+```javaScript
+function checkSign(num) {
+  return (num > 0) ? "positive" : (num < 0) ? "negative " : "zero";
+
+}
+
+console.log(checkSign(10));
+console.log(checkSign(0));
+console.log(checkSign(-2));
 
 ```
 15. [Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
 
       My Solution💻:
-```
+```javaScript
+function checkSign(num) {
+  return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero";
+}
+
+console.log(checkSign(10));
+console.log(checkSign(0));
+console.log(checkSign(-2));
 
 ```
 16. [Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
