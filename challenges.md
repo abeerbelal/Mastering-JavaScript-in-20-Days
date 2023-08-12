@@ -8,7 +8,7 @@
 1. [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 
    My Solution💻:
-```
+```javaScript
 let a = 25;
 let b = 36;
 let c = 46;
@@ -23,7 +23,7 @@ console.log(a,b,c);
 2. [Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
 
       My Solution💻:
-```
+```javaScript
 let myStr = "This is the first sentence. ";
 myStr +="This is the second sentence.";
 
@@ -34,7 +34,7 @@ console.log(myStr);
 3. [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
 
       My Solution💻:
-```
+```javaScript
 const lastName = "Lovelace";
 
 const secondToLastLetterOfLastName = lastName[lastName.length - 2];
@@ -51,7 +51,7 @@ console.log(secondToLastLetterOfLastName);
    
 
   My Solution💻 1:
-  ```
+```javaScript
 let a = 0;
 let b = "0";
 let c = false;
@@ -63,7 +63,7 @@ console.log(!!d);// the output => true, because (double negation) operator is us
 ```
 
   My Solution💻 2:
-  ```
+ ```javaScript
   console.log(4 + 5 * "7"); the output =>39
 
 ```
@@ -71,13 +71,13 @@ console.log(!!d);// the output => true, because (double negation) operator is us
 4 + 35 evaluates to 39
 
   My Solution💻 3:
-  ```
+```javaScript
 let result = 5 + 2 * 3 - 1;the output =>10 
 ```
 JavaScript follows a specific order of operations, (*) has higher precedence than addition (+) and subtraction (-). So, the multiplication operation is performed first.then addition then subtraction.
 
   My Solution💻 4:
-  ```
+```javaScript
 let x = 10;
 let y = '10';
 console.log(x == y); Output: true,
@@ -88,7 +88,7 @@ The === operator performs a strict equality comparison without type coercion.
 variable x has the value 10 (a number), and the variable y has the value '10' (a string).
 
  My Solution💻 5:
- ```
+ ```javaScript
 let num = "15";
 let isPositive = true;
 let result = (num > 10 && isPositive) || num < 0;
@@ -267,13 +267,55 @@ console.log(checkSign(-2));
 16. [Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
 
       My Solution💻:
-```
+```javaScript
+const filteredList = watchList
+  .filter(movie => parseFloat(movie.imdbRating) > 8.0)
+  .map(movie => {
+    return {
+      title: movie.Title,
+      rating: movie.imdbRating
+    };
+  });
+
+console.log(filteredList);
+
 
 ```
 17. [Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
 
       My Solution💻:
-```
+```javaScript
+function golfScore(par, strokes) {
+  const names  = [
+    "Hole-in-one!",
+    "Eagle",
+    "Birdie",
+    "Par",
+    "Bogey",
+    "Double Bogey",
+    "Go Home!"
+  ];
+
+  if (strokes === 1) {
+    return names [0];
+  } else if (strokes <= par - 2) {
+    return names [1];
+  } else if (strokes === par - 1) {
+    return names [2];
+  } else if (strokes === par) {
+    return names [3];
+  } else if (strokes === par + 1) {
+    return names [4];
+  } else if (strokes === par + 2) {
+    return names [5];
+  } else {
+    return names [6];
+  }
+}
+
+// Test cases
+console.log(golfScore(4, 1)); // Output: "Hole-in-one!"
+console.log(golfScore(4, 2)); // Output: "Eagle"
 
 ```
 
