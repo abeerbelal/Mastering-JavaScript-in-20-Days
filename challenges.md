@@ -284,6 +284,7 @@ console.log(filteredList);
 17. [Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
 
       My Solution💻:
+    
 ```javaScript
 function golfScore(par, strokes) {
   const names  = [
