@@ -11,6 +11,7 @@ Take on this task to improve your command of JavaScript. You will explore variou
 - Duration: 20 days
 - Objective: Learn the fundamentals of JavaScript and explore more complex ideas by practicing and learning new things every day.
 
+
 # Courses🚀
 - [JavaScript: From First Steps to Professional](https://frontendmasters.com/courses/javascript-first-steps/)
 - [JavaScript: The Hard Parts, v2](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
