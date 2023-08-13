@@ -323,7 +323,30 @@ console.log(golfScore(4, 2)); // Output: "Eagle"
 18. [ricky&mortyTask](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week1%20-%20javascript-from-first-steps-to-professional/day%206/task.md)
 
       My Solution💻:
-```
+```javaScript
 
 ```
+19. [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Proble](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 
+      My Solution💻:
+```javaScript
+
+```
+20. [Apply Functional Programming to Convert Strings to URL Slugs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
+
+      My Solution💻:
+```javaScript
+
+```
+21. [Functions and Callbacks](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%201/tasks.md)
+
+      My Solution💻:
+```javaScript
+
+```
+22. [Call Stack and Recursion](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%201/tasks.md)
+
+      My Solution💻:
+```javaScript
+
+```
