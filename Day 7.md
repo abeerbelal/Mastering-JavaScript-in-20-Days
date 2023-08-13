@@ -1,4 +1,4 @@
-#  Day 6 💎
+#  seventh Day 💎
 
 
 ## JavaScript Principles  🎯🚀 
