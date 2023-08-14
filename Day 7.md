@@ -3,7 +3,6 @@
 
 ## JavaScript Principles  🎯🚀 
 When JavaScript code runs, it:
-
 1. Goes through the code line-by-line and runs/ ’executes’ each line - known as the **thread of execution**
 2. Saves ‘data’ like strings and arrays so we can use that data later - in its memory. We can even save code (‘functions’)
 
@@ -49,5 +48,13 @@ They can co-exist with and can be treated like any other javascript object
 | Callback Function      | The function we insert and pass as an argument. It's the function that will be called later when certain conditions are met. |
 | Higher-Order Function  | The outer function that accepts another function as an argument. It's a function that can manipulate or use the passed callback function. |
 
+
+### Anonymous and arrow functions 🤔
+- Improve immediate legibility of the code
+- But at least for our purposes here they are ‘syntactic sugar
+- we’ll see their full effects later - Understanding how they’re working under the hood is vital to avoid confusion
+
+
+## Closure 🔥💫
 
 
