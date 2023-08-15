@@ -350,3 +350,48 @@ console.log(golfScore(4, 2)); // Output: "Eagle"
 ```javaScript
 
 ```
+23. [Exercises for closures](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
+
+23.1 
+      My Solution💻:
+```javaScript
+
+```
+
+23.2
+      My Solution💻:
+```javaScript
+
+```
+23.3
+      My Solution💻:
+```javaScript
+
+```
+23.4
+      My Solution💻:
+```javaScript
+
+```
+24. [Exercises for Async JS & Promises](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
+
+24.1 
+      My Solution💻:
+```javaScript
+
+```
+24.2
+      My Solution💻:
+```javaScript
+
+```
+24.3 
+      My Solution💻:
+```javaScript
+
+```
+25.[Object Oriented Programming](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%204/task.md)
+      My Solution💻:
+```javaScript
+
+```
