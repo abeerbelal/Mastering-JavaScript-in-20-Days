@@ -49,3 +49,90 @@ in an asynchronous environment
 
 ## Asynchronous JavaScript 🎯🚀
 
+JavaScript is:
+
+- Single-threaded (one command runs at a time)
+- Synchronously executed (each line is run in order the code appears)
+
+<br>
+
+
+```javaScript
+function printHello() { console.log("Hello"); }
+function blockFor1Sec() {
+    setTimeout(()=>{console.log("1 sec");},1000) //3
+    //blocks in the JavaScript thread for 1 sec
+}
+
+setTimeout(printHello, 0);//2
+blockFor1Sec()
+console.log("Me first!"); //1
+
+```
+> ### Note: 💡
+> setTimeOut doesn't do anything in JS it has consequences in the web browser
+
+#### JavaScript is not enough We need new pieces (some of which aren’t JavaScript at all) 💫
+
+### Our core JavaScript engine has 3 main parts: 🔥
+
+- Thread of execution
+- Memory/variable environment
+- Call stack
+
+<br>
+
+### We need to add some new components:  ⚡️🔥
+
+- Browser APIs/Node background APIs
+- Promises
+- Event loop, Callback/Task queue and micro task queue
+
+```javaScript
+setTimeout(()=>console.log("Hello"), 0);
+
+for (let i=0; i<100; i++)
+    console.log("Me first!");
+
+//for loop makes block for the execution, when finish the loop will print Hello
+```
+
+
+
+```javaScript
+function setTime() {
+    setTimeout(()=>{console.log("Hello")},4000)}
+
+for (let i=0; i<5; i++)
+    setTime()
+
+console.log("Finally");
+
+// Finally then Hello 
+```
+
+### Event Loop ➰🔥🔥
+have asynchronous capabilities. It's responsible for handling and managing asynchronous operations in a non-blocking manner, allowing programs to perform tasks like responding to user input, fetching data from servers, and more, without freezing up the entire application.
+```javaScript
+console.log('Start');
+
+setTimeout(() => {
+    console.log('Timeout 1');
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log('Promise 1');
+});
+
+console.log('End');
+
+ /* the output:=>
+Start
+End
+Promise 1
+Timeout 1
+*/
+
+```
+## Promises ☄️🌘
+
