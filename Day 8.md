@@ -136,3 +136,68 @@ Timeout 1
 ```
 ## Promises ☄️🌘
 
+Special objects built into JavaScript that get returned immediately when we make 
+a call to a web browser API/feature (e.g. fetch) that’s set up to return promises 
+(not all are)
+Promises act as a placeholder for the data we expect to get back from the web 
+browser feature’s background work.
+
+#### A Promise is in one of these states:
+
+- *pending*: initial state, neither fulfilled nor rejected.
+- *fulfilled:* meaning that the operation was completed successfully.
+- *rejected:* meaning that the operation failed.
+
+#### promises object contains
+ 1. value 
+ 2. fulfilled: Array
+ Any function I want to apply after fetching the data should be in the
+ fulfilled array, but I don't have access to it, so .then do that
+ In other words a function that automatically run when the data comes.
+
+
+ **then** method and functionality to call on completion 💻🔥
+
+```javaScript
+- Any code we want to run on the returned data must also be saved on the promise
+object
+- Added using .then method to the hidden property ‘onFulfilment’
+- Promise objects will automatically trigger the attached function to run (with its
+input being the returned data
+```
+
+###  Order of execution: 👩🏻‍💻
+We have three things to organize the execution:
+
+1. **call stack**
+2. **callback queue**
+3. **micro queue**
+ 
+> ### Note: ⏳
+> When all the global code finished running and thers is nothing in the call stack 
+> the queues is going to be checked (micro queue is the first)
+
+
+
+```javaScript
+function display(data){console.log(data)}
+function printHello(){console.log("Hello");}
+function blockFor300ms(){/* blocks js thread for 300ms */ }
+
+
+const futureData = fetch('https://twitter.com/will/tweets/1')
+futureData.then(display)
+setTimeout(printHello, 0); 
+// when the time finish the callback will be sent to callback queue
+blockFor300ms()
+console.log("Me first!");
+
+// micro queu: display
+// callback queue: printHello
+
+/*
+	Me first!
+  Hello
+  Response {type: 'cors', url: 'https://dummyjson.com/quotes', ...}
+*/
+```
