@@ -1,6 +1,7 @@
 # nineth Day ☄️
 
 
+
 ## Classes & Prototypes 🔥
 Prototype chain: the feature behind-the-scenes that enables emulation of OOP but is a compelling tool in itself
 
