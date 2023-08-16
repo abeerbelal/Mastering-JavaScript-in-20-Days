@@ -56,6 +56,7 @@ memory for all our data and functions. But our functions are just copies
 > - Arrow functions override the normal this rules
 
 
+
 - Two kinds of properties
 1. Own properties: are defined directly on the object instance itself.
 2. prototype properties: are defined on the prototype.
