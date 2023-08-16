@@ -518,8 +518,9 @@ executeInSequenceWithPromises(apis)
 
 
 ```
-25.[Object Oriented Programming](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%204/task.md)
-      My Solution💻:
-```javaScript
+25.[Object Oriented Programming](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%204/task.md).
 
-```
+[My Solution💻](https://www.freecodecamp.org/fcc11472c2d-4ae0-4251-ad2d-40c5ee0c2238).
+
+   
+
