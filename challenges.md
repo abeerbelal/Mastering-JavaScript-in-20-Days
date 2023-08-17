@@ -331,6 +331,15 @@ console.log(golfScore(4, 2)); // Output: "Eagle"
 
       My Solution💻:
 ```javaScript
+const squareList = arr => {
+   return arr
+    .filter(num => Number.isInteger(num) && num > 0)
+    .map(num => num * num);
+
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
 
 ```
 20. [Apply Functional Programming to Convert Strings to URL Slugs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
@@ -338,11 +347,44 @@ console.log(golfScore(4, 2)); // Output: "Eagle"
       My Solution💻:
 ```javaScript
 
+function urlSlug(title) {
+ return title.toLowerCase().split(' ').filter(word => word !== '').join("-");
+
+}
+
+ console.log(urlSlug(" Winter Is  Coming"));
+
 ```
 21. [Functions and Callbacks](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%201/tasks.md)
 
       My Solution💻:
 ```javaScript
+
+const mapAsync = async (arr, callback) => {
+  const result = [];
+
+  for (const item of arr) {
+    const newVal = await callback(item);
+    result.push(newVal);
+  }
+
+  return result;
+};
+
+
+const arr = [1, 2, 3, 4, 5];
+const callback = async (x) => {
+  return x * 2;
+};
+
+mapAsync(arr, callback)
+  .then(newArr => {
+    console.log(newArr); 
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
 
 ```
 22. [Call Stack and Recursion](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%201/tasks.md)
