@@ -116,7 +116,13 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 
       My Solution💻:
 ```
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun'];
+  return sentence;
+}
 
+console.log(spreadOut()); // ["learning", "to", "code", "is", "fun"]
 ```
 
 7. [Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
