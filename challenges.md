@@ -432,6 +432,14 @@ mapAsync(arr, callback)
 
       My Solution💻:
 ```javaScript
+function sumRange(start, end) {
+  if (start === end) {
+    return start;
+  } else {
+    return start + sumRange(start + 1, end);
+  }
+}
+console.log(sumRange(3, 7)); // Output: 25 (3 + 4 + 5 + 6 + 7)
 
 ```
 23. [Exercises for closures](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
