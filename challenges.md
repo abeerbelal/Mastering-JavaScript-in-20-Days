@@ -115,7 +115,7 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 6. [Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
 
       My Solution💻:
-```
+```javaScript
 function spreadOut() {
   let fragment = ['to', 'code'];
   let sentence = ['learning', ...fragment, 'is', 'fun'];
