@@ -398,22 +398,39 @@ mapAsync(arr, callback)
 23.1 
       My Solution💻:
 ```javaScript
+const createCounter = (start)=>{
+    let counter =0;
+    const increment = ()=> ++counter
+    return increment
+}
 
 ```
 
 23.2
       My Solution💻:
 ```javaScript
+const  calculateAverage = (nums)=>{
+    const average = ()=> nums.reduce((sum,num)=>sum+num,0)/nums.length
+    return average
+}
 
 ```
 23.3
       My Solution💻:
 ```javaScript
+const powerOf = (baseNum)=>{
+    const result = (exp)=> baseNum**Num
+    return result
+}
 
 ```
 23.4
       My Solution💻:
 ```javaScript
+const compose = (...functions)=>{
+    const reverse =()=> functions.reduceRight((result, fun)=>fun(result))
+    return reverse
+} 
 
 ```
 24. [Exercises for Async JS & Promises](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
