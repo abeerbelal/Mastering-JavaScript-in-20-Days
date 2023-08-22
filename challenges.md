@@ -638,4 +638,105 @@ executeInSequenceWithPromises(apis)
 [My Solution💻](https://www.freecodecamp.org/fcc11472c2d-4ae0-4251-ad2d-40c5ee0c2238).
 
    
+26. [Types, Coercion](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%201/tasks.md)
 
+
+26.1
+      My Solution💻:
+    
+   ```javaScript
+ ```
+
+ 26.2
+     My Solution💻:
+    
+   ```javaScript
+ ```
+ 26.3
+    My Solution💻:
+    
+   ```javaScript
+ ```
+ 26.4
+     My Solution💻:
+    
+   ```javaScript
+ ```
+ 26.5
+    My Solution💻:
+    
+   ```javaScript
+ ```
+27. [Equality, Static Typing](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
+
+
+27.1
+    My Solution💻:
+     
+ ```javaScript
+    
+   ```
+27.2
+  My Solution💻:
+  
+ ```javaScript
+    function testScope1() {
+     if (true) {
+       var a = 1;
+       let b = 2;
+       const c = 3;
+     }
+     console.log(a);
+     console.log(b);
+     console.log(c);
+   }
+   
+    testScope1();
+
+    
+  ```
+27.3
+  My Solution💻:
+  
+ ```javaScript
+ function testScope2() {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+}
+
+testScope2();
+
+
+  ```
+27.4
+  My Solution💻:
+  
+ ```javaScript
+    
+function testScope3() {
+  var a = 36;
+  let b = 100;
+  const c = 45;
+
+  console.log([a, b, c]);
+
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+
+    console.log([a, b, c]);
+  }
+
+  console.log([a, b, c]);
+}
+
+testScope3();
+
+  ```
