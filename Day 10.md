@@ -1,16 +1,14 @@
 # tenth Day 💻
 
 
-## Introduction 🎯🚀 
+## Introduction 
 
-<br>
-
-> Whenever there's a divergence
+ Whenever there's a divergence
 between what your brain thinks
 is happening, and what the
 computer does, that's where
 bugs enter the code.
->
+
 
 
 ```javaScript
@@ -22,25 +20,22 @@ let x = 2;
 x = x +1
 
 let x = "2"
-++x; // shoudl be 21
-// but it's 3 beacuse JS is written like this
+++x; // should be 21
+//But it's 3 because JS convert the sting into number so make it additional operation
 ```
 
 
-<br>
+## Types 
 
-<br>
-
-## Types 🫧💭
-
-> ❓🤔 Evrey thing inside JS is an object ???
+ "In JavaScript, everything 
+is an object." 🤔
+false
 > 
->  💁🏻‍♀️ Evereh thing can bevhave as an object
-
-<br>
+>  Every thing can behave as an object
 
 
-### Primitive Types 🔮⚡️
+
+### Primitive Types ⚡️
 
 - undefined
 - string
@@ -52,80 +47,70 @@ let x = "2"
 
 function & arrays are a subtype of a object type
 
-
-<br>
-
-<br>
-
 > - undefined • string • number • boolean • object • symbol • null • bigint (future)⇒Not
 > - object • function • array ⇒ Objects
 
 <br>
 
-> ### 📌 Note:
+> ###  Note: 📌
 > In JavaScript, variables
 > don't have types,
 > values do.
 
 <br>
 
-> ### 💡 Notes:
-> 1. typeof : always return string
-> 2. function & arrays not types of the top level they are sub types of object,
+> ###  Notes: 💡📌
+> 1. typeof: always return string
+ > ```javaScript
+>   typeof 5;          // "number"
+>    typeof "hello";    // "string"
+>    typeof true;       // "boolean"
+>    typeof undefined;  // "undefined"
+>    typeof null;       // "object" (a historical mistake in JavaScript)
+>    typeof [];         // "object"
+>    typeof {};         // "object"
+>    typeof function() {// "function"
+>   ```
+
+> 2. function & arrays not types of the top level they are subtypes of object,
  but when using typeof array ⇒ object while function ⇒ function
-> 3. type of null = object it is a bug in JS, ih they want to correct it a lot of things will fail in the JS
-
-<br>
-<br>
-
-### Nan:  ⏳✨ 
-(Special Values)is the only value that is not equall to it self
-
-#### Typy of Nan 💻🔥
-NaN type is number (invalid number), becuase it cmoes from numeric operations
+> 3. type of null = object it is a bug in JS, if they try to correct it a lot of things will fail in the JS
 
 
-   <br>
+### NaN: ✨ 
+(Special Values)is the only value that is not equal to it self
 
-### is Nan method ✨☄️
+#### Typy of NaN 🔥
+NaN type is number (invalid number), because it cmoes from numeric operations
+
+
+### is NaN method ✨☄️
 ```javaScript
 isNan()
-// evaluate any argument to number then cheak weather it's a Nan or not
-
+// evaluate any argument to number then check weather it's a Nan or not
 Number.isNan()
-// better than the prevous
+// better than the previous
 
-isNaN("Sarah")          // ✅ true
-Number.isNaN("Sarah")   // ❌ false
+isNaN("Abeer")          // ✅ true
+Number.isNaN("Abeer")   // ❌ false
 ```
 
-<br>
-
 ### Object.is( , )
-it’s built in cheaker
+it’s a built-in checker
 
-better way for cheaking equality (better than ===)
+better way for checking equality (better than ===)
 
 
 ```javaScript
- // we might use -0 for directons in some applecaions which the sign means direc.
- 
+ /We might use -0 for directions in some applications in which the sign means direct.
 -0 === 0                // ✅ true
 Object.is(-0 ,0 )       // ❌ false
 ```
 
-<br>
-
-<br>
-
-> ### 🪐 Note:
+> ### Note: 📌
 >  === failed in Nan & -0
 
-   <br>
-   <br>
-   
 ### Excersie🔥💫
-
 
 ```javaScript
 // TODO: define polyfill for `Object.is(..)`
@@ -178,11 +163,11 @@ console.log(Object.is(undefined,null) === false);
 <br>
 <br>
 
-## Coercion 🍄🍃 
+## Coercion 🍃💡 
 type conversion
 
-### Abstract Operations: ToPrimitive🧐🪩
-#### .toString ()  🎆🌟 
+### Abstract Operations: ToPrimitive🧐
+#### .toString ()  🌟 
 
 ```javaScript
 (null).toString()                  // "null"
@@ -204,10 +189,7 @@ false.toString()                   // "false"
 ```
 
 
-<br>
-   <br>
-
-###  ToNumber 💡💎
+###  ToNumber 💎
 
 ```javaScript
 // using Number(x)
@@ -239,15 +221,13 @@ undefined  // Nan
 
 <br>
 
-#### Why true & false shouldn’t convert to 1&0 🔑🎆
+#### Why true & false shouldn’t convert to 1 & 0 
 
 ```javaScript
 3 > 2 > 1
 (true) > 1
 1 > 1 // false !!!!
 ```
-
-<br>
 
 ### ToBoolean()
 ```javaScript
@@ -258,30 +238,28 @@ null
 NaN
 false
 undefined
-// anything eles will be truthy value
+//Anything eles will be truthy value
 ```
 
 
   
-### Cases of coercion: 🌟🌠
+### Cases of coercion: 🌠
 
 ```javaScript
 // coercions: 
 
-// string concatination calls toString method
+// string concatenation calls toString method
 "Sarah" + 15
 
-`hhh ${variable}`
+` ${variable}`
 // also use toString
 
 `hh ${variable.toString()}
-// impicit `coercion, primitve types don't have methods
+// implicit `coercion, primitive types don't have methods
 
-// all of the above are implicit
+//All of the above are implicit
 // explicit 
 String(variable)
 
 ```
 
-<br>
-<br>
