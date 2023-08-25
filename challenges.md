@@ -645,27 +645,66 @@ executeInSequenceWithPromises(apis)
       My Solution💻:
     
    ```javaScript
+   function convertStringToNumber(input) {
+  if (typeof input === 'string') {
+    return +input;
+  } else {
+    return {
+      value: input,
+      type: typeof input
+    };
+  }
+}
+
  ```
 
  26.2
      My Solution💻:
     
    ```javaScript
+const checkNaN = (value) => {
+  return Number.isNaN(value);
+}
+
  ```
  26.3
     My Solution💻:
     
    ```javaScript
+function isEmptyValue(value) {
+  return value === undefined || value === null || value === '';
+}
+
  ```
  26.4
      My Solution💻:
     
    ```javaScript
+function compareObjects(input1, input2) {
+  if (typeof input1 !== 'object' || typeof input2 !== 'object') {
+    return [input1, input2];
+  }
+
+  return JSON.stringify(input1) === JSON.stringify(input2);
+}
+
  ```
  26.5
     My Solution💻:
     
    ```javaScript
+const complexCoercion = (input) => {
+  if (typeof input === 'number') {
+    return Boolean(String(input));
+  } else if (typeof input === 'string') {
+    return Boolean(input);
+  } else if (input === null || input === undefined) {
+    return false;
+  } else {
+    return input;
+  }
+};
+
  ```
 27. [Equality, Static Typing](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
 
@@ -674,6 +713,67 @@ executeInSequenceWithPromises(apis)
     My Solution💻:
      
  ```javaScript
+interface HelloWorldResponse {
+  message: string;
+}
+
+interface CheckBooleanResponse {
+  result: boolean;
+}
+
+interface ReturnObjResponse {
+  x: string;
+  y: number;
+}
+
+type PromiseType<T> = Promise<T> | (() => Promise<T>);
+
+const sayHelloWorld: PromiseType<HelloWorldResponse> = new Promise((resolve, reject) => {
+  resolve({ message: "Hello world!" });
+});
+
+const checkBoolean = (boolean: boolean): PromiseType<CheckBooleanResponse> => new Promise((resolve, reject) => {
+  if (boolean) {
+    resolve({ result: boolean });
+  } else {
+    reject(`Input is false :(`);
+  }
+});
+
+const returnObj: PromiseType<ReturnObjResponse> = new Promise((resolve, reject) => {
+  resolve({
+    x: "meow",
+    y: 45,
+  });
+});
+
+const promisesArray = [sayHelloWorld, checkBoolean, returnObj];
+
+const convertToObj = async (array: PromiseType<any>[]): Promise<any> => {
+  const obj: Record<string, any> = {};
+
+  for (let i = 0; i < array.length; i++) {
+    let result;
+
+    if (typeof array[i] === 'function') {
+      // Handle the case where the array element is a function that returns a promise
+      result = await array[i]();
+    } else {
+      // Handle the case where the array element is already a promise
+      result = await array[i];
+    }
+
+    obj[`promise${i + 1}`] = result;
+  }
+
+  return obj;
+}
+
+(async () => {
+  const resultObj = await convertToObj(promisesArray);
+  console.log(resultObj);
+})();
+
     
    ```
 27.2
@@ -740,3 +840,171 @@ function testScope3() {
 testScope3();
 
   ```
+28. [Scope & Function Expressions](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%203/tasks.md)
+
+    
+28.1
+
+My Solution💻:
+
+```javaScript
+const arrowHOF = (normalFunc) => {
+  return (...args1) => {
+    return (...args2) => {
+      const result = normalFunc(...args1);
+      const repetitions = args2[0];
+
+      if (typeof repetitions === 'number' && repetitions > 0) {
+        const enhancedResult = new Array(repetitions).fill(result);
+        return enhancedResult;
+      } else {
+        throw new Error('Invalid repetition argument');
+      }
+    };
+  };
+};
+
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
+};
+
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
+};
+
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
+};
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs [60, 60]
+console.log(hofNormalFunc2(20, 35)(4)); // logs [700, 700, 700, 700]
+console.log(hofNormalFunc3("Meow")()); // logs ["Meow Meow Meow!"]
+
+```
+
+28.2 
+
+My Solution💻:
+
+```javaScript
+const preserveThis = (func) => {
+  return function (...args) {
+    return func.apply(this, args);
+  };
+};
+
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const preservedGreet = preserveThis(obj.greet);
+
+preservedGreet('Hello'); // Output: "Hello, John!"
+
+```
+
+28.3.1
+
+My Solution💻:
+
+```javaScript
+function outer1() {
+  var x = 10;
+
+  var inner1 = function() {
+    console.log(x);
+  };
+
+  inner1();
+}
+
+outer1(); // Output: 10
+```
+Reasoning for example 1's output:
+
+ because lexical scoping, allows inner functions to access variables from their containing (outer) functions even after those outer functions have finished executing
+
+
+
+28.3.2
+
+My Solution💻:
+
+```javaScript
+function outer2() {
+  var x = 10;
+
+  var inner2 = function() {
+    var x = 20;
+    console.log(x);
+  };
+
+  inner2();
+}
+
+outer2(); // Output: 20
+```
+Reasoning for example 2's output:
+
+the inner variable x shadows the outer variable x, so the inner variable's value is used when x is referenced within the inner2 function. This behavior is due to JavaScript's lexical scoping and the concept of variable shadowing.
+
+
+29. [Advanced Scope](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%204/tasks.md)
+
+
+29.1
+
+My Solution💻:
+
+```javaScript
+for (var i = 0; i < 5; i++) {
+  (function (num) {
+    setTimeout(function () {
+      console.log("value of [i] is:", num);
+    }, 100);
+  })(i);
+}
+
+```
+
+
+29.2
+
+My Solution💻:
+
+```javaScript
+let array = [];
+
+for (let i = 0; i < 5; i++) {
+   array.push(i);
+   console.log("Current array is:", array);
+}
+
+```
+
+
+29.3
+
+My Solution💻:
+
+```javaScript
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+
+```
+
