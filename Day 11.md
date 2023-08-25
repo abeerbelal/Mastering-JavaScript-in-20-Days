@@ -25,10 +25,10 @@ null === undefined; // false, because they have different types
 
 <br>
 
-## Static Typing 🎯
+## Static Typing 🎯⌨️
 
 
-###  Benefits: 💫💭 
+###  Benefits: 💫
 
 1. Catch type-related mistakes
 2. Communicate type intent
@@ -36,21 +36,25 @@ null === undefined; // false, because they have different types
 4. validating operand types to avoid errors
 
 
-<br>
 
-### **[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)** 🔮🫧
+####  TypeScript and Flow:
 
-<br>
-<br>
 
-##  Scope ✨☄️
+are indeed similar in many ways because they both address the same general problem: adding static type checking to JavaScript to catch type-related errors early in the development process
+### **[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)** 
+
+
+##  Scope ☄️🌌
 
 JavaScript organizes scopes with functions and blocks
 
 <br>
 
-> ### 👉 Note:
+> ###  Note: 📌
 >  Having two varibles with same name in different scopes called shadowing
+>  **"shadowing"** refers to a situation where a variable declared in an inner scope has the same name as a variable declared in an  
+>   outer scope. This can lead to unexpected behavior and bugs, as the inner variable "shadows" or takes
+>  precedence over the outer variable within that inner scope.
 
 <br>
 
@@ -58,61 +62,68 @@ JavaScript organizes scopes with functions and blocks
 
 1. scope maneger detrmine the scope
 2. then bring data or store it in the variable
-###  
 
 <br>
 
 
 
-###  Auto Globale: 👩🏻‍💻🌍
+###  dynamic global variables: 🌍
 
-If I try to use varible in cuurent scope without declaring it, it will be delared in the globale scope
+If I try to use varible in current scope without declaring it, it will be declared in the global scope
 
 ```javaScript
-function h (){
-    x = "sarah"
+function foo (){
+    x = "abeer"
     console.log(x)
 }
-h() // sarah
+foo() //Outputs: abeer
 ```
-
-   <br>
    
 
-### Disable it 🔥💫
+### Disable it 🔥
 
 ```javaScript
 "use strict" 
-function h (){
-    x = "sarah"
+function foo (){
+    x = "abeer"
     console.log(x)
 }
-h() // erorr
+foo() //Outputs:  referance error
 ```
 
-<br>
-<br>
 
-## Scope & Function Expressions 🎨🌊
 
-### Function expression 🔮🫧
+## Scope & Function Expressions 🌊
 
+### Function expression 
 ```javaScript
-let fun1 = function fun2(){
-    console.log("Sarah")
-}
+const add = function(x, y) {
+  return x + y;
+};
 
-fun1() //Sarah
-fun2() //ReferenceError
+console.log(add(3, 5)); // Outputs: 8
+
 ```
 
-### Named Function Expressions: Benefits 💫💭
+### Named Function Expressions:
+
+####  Benefits 💭
 
 1. Reliable function self-reference (recursion, etc)
 2. More debuggable stack traces
 3. More self-documenting code
 
-### Exercises🍄🍃
+
+```javaScript
+let fun1 = function fun2(){
+    console.log("abeer")
+}
+
+fun1() // Outputs:abeer
+fun2() Outputs: //ReferenceError
+```
+
+### Exercises🍃
 
 ```javaScript
 /*
@@ -165,14 +176,13 @@ function remindUnpaid(recordIds) {
 }
 ```
 
-<br>
-<br>
+
 
    
-## Functional Programming🔥💫
+## Functional Programming🔥
 <br>
 
-> ### 📝Note:
->  Functional programming is a good habit. It keeps your code easy to manage, and saves you from sneaky bugs. 
+> ### Note:📝
+>  Functional programming is a good habit. It keeps your code easy to manage and saves you from sneaky bugs. 
 
 
