@@ -43,3 +43,9 @@ Take on this task to improve your command of JavaScript. You will explore variou
 - [Day 4](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%204.md)💎
 - [Day 5](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%205.md)💎
 - [Day 6](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%206.md)💎
+- [Day 7](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%207.md)💎
+- [Day 8](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%208.md)💎
+- [Day 9](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%209.md)💎
+- [Day 10](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%2010.md)💎
+- [Day 11](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%2011.md)💎
+- [Day 12](https://github.com/abeerbelal/Mastering-JavaScript-in-20-Days/blob/main/Day%2012.md)💎
