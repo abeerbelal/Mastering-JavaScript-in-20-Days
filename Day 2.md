@@ -162,7 +162,7 @@ an expression evaluates (aka resolves) to a value, more like content.
  ## Variables: 🎯🚀
  A variable is a named reference to a valu—thatt way an unpredictable value can be accessed through a predetermined name.
  - Variables let us remember values.
- - as pointer points to specific value.
+ - as pointer points to specific value. 
 
   ### Declaring a variable
   - via var keyword ` var name;` 🔓
