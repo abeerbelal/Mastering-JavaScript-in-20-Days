@@ -31,7 +31,7 @@ synonyms.push("multitude");
   ```javaScript
   "Abeer" == ["Abeer"]      // ✅
   "Abeer" === ["Abeer"]     // ❌
-  "Sarah" === ["Abeer"][0]  // ✅
+  "Abeer" === ["Abeer"][0]  // ✅
 
   ["c", "a", "d", "b"].sort() // ['a', 'b', 'c']
   [100, 2,50].sort()   // [100, 2,50].sort()  //It converts the elements into strings and then sort them
