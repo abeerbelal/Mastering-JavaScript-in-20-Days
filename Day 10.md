@@ -249,7 +249,7 @@ undefined
 // coercions: 
 
 // string concatenation calls toString method
-"Sarah" + 15
+"Abeer" + 15
 
 ` ${variable}`
 // also use toString
